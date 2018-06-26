@@ -66,7 +66,7 @@ exec su --preserve-environment ${RUN_AS} -s /bin/bash -c "/usr/bin/transmission-
 if [ "$OPENVPN_PROVIDER" = "PIA" ]
 then
     echo "CONFIGURING PORT FORWARDING"
-    exec /etc/transmission/updatePort.sh &
+    exec /etc/transmission/updatePort.sh
 else
     echo "NO PORT UPDATER FOR THIS PROVIDER"
 fi
